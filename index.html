@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="contenedor">
+            <h1>Encriptador de texto - Desafío Alura</h1>
+        </div>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <section class="ingreso">
+            <textarea class="texto" name="ingreso" id="ingreso" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            <p>&#9432; Solo se permiten letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="result">
+            <textarea class="resultado" name="result" id="result" cols="30" rows="10"></textarea>
+            <div class="botones">
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <!-- Pie -->
+    <footer>
+        <p class="copyright">&copy; Diego Soto - Todos los derechos reservados</p>
+    </footer>
+    <script src="Javascript/encriptador.js"></script>
+</body>
+</html>
